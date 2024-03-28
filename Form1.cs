@@ -32,16 +32,22 @@ namespace PrimeNumberIXF
                 if (isPrime)
                 {
                     this.BackColor = Color.Green;
+                    PrimeNumberTextbox. Text = " ";
                 }
                 else
                 {
                     this.BackColor = Color.Red;
+                    PrimeNumberTextbox.Text = " ";
+
                 }
             } else
             {
                 MessageBox.Show("S-a introdus un text");
+                this.BackColor = Color.Yellow;
+             
+
             }
-            
+
         }
     }
 }
